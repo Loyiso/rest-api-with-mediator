@@ -22,7 +22,7 @@ namespace UserAddress.API.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            try
+            try  
             {
                 return Ok(await _mediator.Send(new GetAllAddressRecordQuery()));
             }
