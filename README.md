@@ -1,10 +1,9 @@
 # Rest-Api with Mediator
-Restful api using mediator pattern
+Restful api using mediator pattern.
+CI/CD - Github actions to deploy to azure web apps.
 
-## URL
-
-[Swagger](https://useraddressapi.azurewebsites.net/swagger/index.html) 
-
+https://useraddressapi.azurewebsites.net/swagger/index.html
+ 
 ## Tech
 - MediatR
 - Entiy Framework Code first
