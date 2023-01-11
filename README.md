@@ -1,6 +1,6 @@
 # Rest-Api with Mediator
 Restful api using mediator pattern.
-CI/CD - Github actions to deploy to azure web apps.
+This uses Github Actions (CI/CD) to deploy to azure web apps.
 
 https://useraddressapi.azurewebsites.net/swagger/index.html
  
