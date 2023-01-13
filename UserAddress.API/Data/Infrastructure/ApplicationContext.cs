@@ -16,6 +16,7 @@ namespace UserAddress.API.Data.Infrastructure
         protected override void OnModelCreating(ModelBuilder builder)
         { 
             builder.ApplyConfiguration(new AddressRecordConfiguration());  
+            builder.ApplyConfiguration(new ProvinceRecordConfiguration());  
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)

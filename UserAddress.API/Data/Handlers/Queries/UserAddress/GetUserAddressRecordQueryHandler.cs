@@ -4,10 +4,10 @@ using MediatR;
 
 namespace UserAddress.API.Data.Handlers.Queries.UserAddress
 {
-    public class GetAllAddressRecordQueryHandler : IRequestHandler<GetAddressRecordQuery, AddressRecord>
+    public class GetUserAddressRecordQueryHandler : IRequestHandler<GetAddressRecordQuery, AddressRecord>
     {
         private readonly IRepository<AddressRecord> _repository;
-        public GetAllAddressRecordQueryHandler(IRepository<AddressRecord> repository)
+        public GetUserAddressRecordQueryHandler(IRepository<AddressRecord> repository)
         {
             _repository = repository;
         }

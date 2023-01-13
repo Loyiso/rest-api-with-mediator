@@ -53,7 +53,7 @@ namespace UserAddress.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateAddressRecordCommand command)
+        public async Task<IActionResult> Create(CreateProvinceRecordCommand command)
         {
             if (command == null)
             {
