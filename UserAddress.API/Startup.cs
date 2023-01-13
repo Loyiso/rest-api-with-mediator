@@ -47,6 +47,8 @@ namespace UserAddress.API
             services.AddMvc()
                .AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
+            services.AddCors();
+
             var logFilePath = Configuration["Logging:LogFilePath"];
             var logFileName = Configuration["Logging:LogFileName"];
 
@@ -73,7 +75,7 @@ namespace UserAddress.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            app.UseCors("Trusted");
+            app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseAuthentication();
             app.UseAuthorization();
 
