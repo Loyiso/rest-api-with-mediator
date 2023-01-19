@@ -2,7 +2,7 @@
 using UserAddress.API.Data.Repositories;
 using MediatR;
 
-namespace UserAddress.API.Data.Handlers.Queries.UserAddress
+namespace UserAddress.API.Data.Handlers.Queries
 {
     public class GetProvinceRecordQueryHandler : IRequestHandler<GetProvinceRecordQuery, ProvinceRecord>
     {
