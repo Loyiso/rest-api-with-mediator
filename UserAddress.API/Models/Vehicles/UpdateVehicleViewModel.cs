@@ -4,6 +4,6 @@ namespace UserAddress.API.Models.Vehicles
 {
     public class UpdateVehicleViewModel : VehicleViewModel
     {  
-        public Guid Id { get; }        
+        public Guid Id { get; set; }        
     }
 }
